@@ -1,0 +1,57 @@
+/*Menú*/
+
+.contenedor{
+    h3{
+        text-align: center;
+    }
+}
+
+.producto{
+    padding: 3rem 0;
+    border-bottom: 1px solid $gris;
+    margin-bottom: 5rem;
+
+
+    @media(min-width: 1080px){
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
+    }
+
+    &:last-of-type{
+        border: none;
+    
+    }
+
+    &:hover{
+        transform: scale(1.08);
+        transition: .4s ease, opacity 0.3s ease;
+        opacity: 0.8;
+    }
+
+    .producto__imagen{
+        max-width: 590px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        
+        img{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.producto__label{
+    font-weight: bold;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    padding: 2rem;
+    border-radius: 1rem;
+
+}

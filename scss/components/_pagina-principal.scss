@@ -1,0 +1,61 @@
+/*Pagina Principal*/
+
+.seccion{
+    padding: 3rem 0;
+    border-bottom: 1px solid $gris;
+    margin-top: 5rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &:last-of-type{
+        border: none;
+    }
+
+    &:hover{
+        transform: translateY(-15px);
+        opacity: 0.8;
+    }
+
+    @media(min-width: 1160px){
+        @include grid-pagina-principal(1fr, 2fr);
+        align-items: center;
+    }
+}
+
+.seccion_reversa{
+    @extend .seccion;
+    @media(min-width: 1160px){
+        @include grid-pagina-principal(2fr, 1fr);
+        align-items: center;
+    }
+}
+
+.seccion__informacion{
+    h4{
+        margin-top: 1rem;
+    }
+}
+.seccion-parrafo{
+    margin-top: -4rem;
+}
+
+.seccion__imagen{
+    max-height: 100%;
+    text-align: center;
+    overflow: hidden;
+    img{
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        @media(min-width: 500px) and (max-width: 1160px){
+            width: 380px;
+            height: 380px;
+        }
+    }
+    .last-image{
+        height: 300px;
+        @media(min-width: 500px){
+            height: auto;
+            width: 100%;
+        }
+    }
+}
