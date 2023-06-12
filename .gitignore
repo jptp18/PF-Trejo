@@ -19,9 +19,6 @@ packages/
 config.ini
 secrets.json
 
-# Ignorar archivos CSS compilados
-*.css
-
 # Ignorar archivos map generados por Sass
 *.map
 
