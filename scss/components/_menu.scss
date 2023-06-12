@@ -32,11 +32,13 @@
     .producto__imagen{
         max-width: 590px;
         margin: 0 auto;
-        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
         
         img{
             width: 100%;
             text-align: center;
+            border-radius: 5px;
         }
     }
 
